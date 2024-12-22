@@ -1,0 +1,3337 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "TT Interphases";
+  src: url("../fonts/tt-interphases-pro/TT Interphases Pro Trial Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Interphases";
+  src: url("../fonts/tt-interphases-pro/TT Interphases Pro Trial Bold.ttf");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Runs";
+  src: url("../fonts/tt-runs/TT Runs Trial ExtraBold.ttf");
+  font-weight: 800;
+  font-style: normal;
+}
+body {
+  font-family: "TT Interphases", sans-serif;
+  background: #000000;
+}
+
+:focus {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1360px;
+  width: 100%;
+  padding: 0px 16px;
+  margin: 0 auto;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 152px;
+  position: relative;
+  z-index: 9;
+}
+
+.header__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 45px;
+  height: 48px;
+  margin-right: 64px;
+}
+.header__logo svg {
+  width: 100%;
+  height: auto;
+}
+
+.header__navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header__navbar li {
+  margin-right: 48px;
+}
+.header__navbar li a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+.header__navbar li:last-child {
+  margin-right: 0;
+}
+
+.header__user {
+  font-family: "TT Runs", sans-serif;
+  width: 56px;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: auto;
+  border-radius: 50%;
+  border: 1px solid #191919;
+  background: #0D0D0D;
+}
+
+.header__name {
+  font-family: "TT Runs", sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 37.8px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #FFFFFF;
+}
+
+.header__btn {
+  margin-left: auto;
+}
+
+.header__cart, .header__x {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #FFFFFF;
+  margin-left: auto;
+}
+
+.banner .container {
+  padding-bottom: 94px;
+}
+
+.banner__wrap {
+  min-height: 544px;
+  overflow: hidden;
+  background: #FF0000;
+  border-radius: 24px;
+  position: relative;
+}
+.banner__wrap h1 {
+  font-family: "TT Runs", sans-serif;
+  max-width: 700px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 52px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #fff;
+}
+
+.banner__img {
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  -webkit-transform: translateY(-52%);
+          transform: translateY(-52%);
+}
+
+.titleh2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 38px;
+}
+.titleh2 h2 {
+  font-family: "TT Runs", sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 43.2px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgb(255, 255, 255);
+}
+.titleh2 .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 18px 24px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #FFFFFF;
+  margin-left: auto;
+}
+
+.products .container {
+  padding-bottom: 88px;
+}
+
+.products__box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 16px 1fr 16px 1fr 16px 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.products__block {
+  min-height: 320px;
+  border-radius: 24px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#1D1D1D));
+  background: linear-gradient(180deg, #000000 0%, #1D1D1D 100%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+}
+
+h6 {
+  font-family: "TT Runs", sans-serif;
+  max-width: 240px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 26px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.products__content {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #404040;
+}
+.products__content h4 {
+  font-family: "TT Runs", sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 37.8px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+}
+.products__content p {
+  max-width: 240px;
+  width: 100%;
+}
+
+.products__content1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 48px 32px 0 32px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #404040;
+}
+.products__content1 h6 {
+  text-align: center;
+}
+.products__content1 p {
+  text-align: center;
+}
+
+.products__content2 {
+  position: absolute;
+  top: 50%;
+  left: 48px;
+  max-width: 240px;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #404040;
+}
+
+.products__content3 {
+  position: absolute;
+  top: 48px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 0 32px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #404040;
+}
+
+.products__price {
+  font-family: "TT Runs", sans-serif;
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 14px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #000000;
+  background: #FFFFFF;
+  padding: 4px 10px;
+  border-radius: 3px;
+}
+
+.products1 .products__block:nth-child(1) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  background: var(--Yellow, rgb(255, 230, 9));
+}
+
+.products1 .products__block:nth-child(2) {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  background: rgb(178, 255, 0);
+}
+
+.products1 .products__block:nth-child(3) {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#1D1D1D));
+  background: linear-gradient(180deg, #000000 0%, #1D1D1D 100%);
+}
+
+.products1 .products__block:nth-child(4) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  background: rgb(255, 0, 4);
+}
+.products1 .products__block:nth-child(4) h6 {
+  color: #fff;
+}
+.products1 .products__block:nth-child(4) p {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.products1 .products__block:nth-child(5) {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  background: rgb(63, 2, 74);
+}
+.products1 .products__block:nth-child(5) h6 {
+  color: #fff;
+}
+.products1 .products__block:nth-child(5) p {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.products2 .products__block:nth-child(1) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  background: rgb(255, 0, 4);
+}
+.products2 .products__block:nth-child(1) h6 {
+  color: #FFFFFF;
+}
+
+.products2 .products__block:nth-child(2) {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#1D1D1D));
+  background: linear-gradient(180deg, #000000 0%, #1D1D1D 100%);
+}
+.products2 .products__block:nth-child(2) h6 {
+  color: #FFFFFF;
+}
+
+.products2 .products__block:nth-child(3) {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3/5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  background: rgb(178, 255, 0);
+}
+
+.products2 .products__block:nth-child(4) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  background: var(--Yellow, rgb(255, 230, 9));
+}
+
+.products2 .products__block:nth-child(5) {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#1D1D1D));
+  background: linear-gradient(180deg, #000000 0%, #1D1D1D 100%);
+}
+.products2 .products__block:nth-child(5) h6 {
+  color: #FFFFFF;
+}
+
+.products2 .products__block:nth-child(6) {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  background: rgb(255, 255, 255);
+}
+
+.products3 .products__block:nth-child(1) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  background: rgb(178, 255, 0);
+}
+
+.products3 .products__block:nth-child(2) {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  background: rgb(255, 255, 255);
+}
+
+.products3 .products__block:nth-child(3) {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  background: rgb(255, 0, 4);
+}
+.products3 .products__block:nth-child(3) h6 {
+  color: #fff;
+}
+.products3 .products__block:nth-child(3) p {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.products3 .products__block:nth-child(4) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  background: rgb(255, 255, 255);
+}
+
+.products3 .products__block:nth-child(5) {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  background: var(--Yellow, rgb(255, 230, 9));
+}
+
+.products4 .products__block:nth-child(1) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  background: var(--Yellow, rgb(255, 230, 9));
+}
+
+.products4 .products__block:nth-child(2) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  background: rgb(0, 0, 0);
+}
+.products4 .products__block:nth-child(2) h6 {
+  color: #fff;
+}
+.products4 .products__block:nth-child(2) p {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.products4 .products__block:nth-child(3) {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  background: rgb(255, 255, 255);
+}
+
+.products4 .products__block:nth-child(4) {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  background: rgb(178, 255, 0);
+}
+
+.products4 .products__block:nth-child(5) {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  background: rgb(255, 255, 255);
+}
+
+.accordion {
+  width: 656px;
+}
+
+.accordion__wrap {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.accordion__wrap:nth-child(1) {
+  padding-top: 0;
+}
+
+.accordion__wrap:last-child {
+  border: 0;
+}
+
+.accordion__title {
+  font-family: "TT Runs", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.accordion__title p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 592px;
+  width: 100%;
+}
+.accordion__title .plus {
+  min-width: 32px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  margin-left: auto;
+  position: relative;
+}
+.accordion__title .plus::after {
+  content: "";
+  width: 10px;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.accordion__title .plus::before {
+  content: "";
+  width: 2px;
+  height: 10px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.accordion__title.active .plus::before {
+  display: none;
+}
+
+.accordion__block {
+  display: none;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #808080;
+}
+.accordion__block p {
+  padding-top: 32px;
+}
+
+.accordion__title.active + .accordion__block {
+  display: block;
+}
+
+.clients {
+  overflow: hidden;
+}
+.clients .container {
+  padding-bottom: 94px;
+}
+
+.clients__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 48px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#0D0D0D), to(#0D0D0D)), radial-gradient(100% 151.07% at 100% 0%, rgba(57, 57, 57, 0) 0%, rgba(57, 57, 57, 0) 50.17%), radial-gradient(100% 100% at 50% 0%, rgba(57, 57, 57, 0) 0%, rgba(57, 57, 57, 0) 45.17%), -webkit-gradient(linear, left bottom, left top, from(rgba(57, 57, 57, 0.05)), to(rgba(57, 57, 57, 0.05)));
+  background: linear-gradient(0deg, #0D0D0D, #0D0D0D), radial-gradient(100% 151.07% at 100% 0%, rgba(57, 57, 57, 0) 0%, rgba(57, 57, 57, 0) 50.17%), radial-gradient(100% 100% at 50% 0%, rgba(57, 57, 57, 0) 0%, rgba(57, 57, 57, 0) 45.17%), linear-gradient(0deg, rgba(57, 57, 57, 0.05), rgba(57, 57, 57, 0.05));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+}
+
+.clients__text {
+  min-width: 448px;
+  max-width: 448px;
+  width: 100%;
+  min-height: 592px;
+  padding-top: 24px;
+  padding-left: 112px;
+  padding-bottom: 48px;
+  margin-right: 112px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #818181;
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.clients__text .bt {
+  position: absolute;
+  bottom: -130px;
+  left: -150px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.clients__text .bt img {
+  width: 420px;
+}
+.clients__text h3 {
+  font-family: "TT Runs", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 52px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgb(255, 255, 255);
+  margin-bottom: 24px;
+}
+
+.clients__slider {
+  min-width: 2000px;
+  min-height: 544px;
+  position: relative;
+  z-index: 2;
+}
+
+.clients__wrap {
+  min-width: 320px;
+  max-width: 320px;
+  width: 320px;
+  height: 544px;
+  margin-right: 16px;
+  border-radius: 24px;
+  position: relative;
+}
+
+.clients__wrap::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60.67%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 60.67%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.clients__content {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  right: 24px;
+  z-index: 2;
+}
+
+.clients__title1 {
+  font-family: "TT Runs", sans-serif;
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 64px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #FFFFFF;
+  margin-bottom: 45px;
+  position: relative;
+}
+
+.clients__title1::before, .clients__title2::before {
+  content: "";
+  width: 24px;
+  height: 19px;
+  position: absolute;
+  left: 0;
+  top: -30px;
+  background: url(../img/title-before.svg) no-repeat center;
+  background-size: 100%;
+}
+
+.clients__title1::after, .clients__title2::after {
+  content: "";
+  width: 24px;
+  height: 19px;
+  position: absolute;
+  right: 0;
+  bottom: -30px;
+  background: url(../img/title-after.svg) no-repeat center;
+  background-size: 100%;
+}
+
+.clients__title2 {
+  font-family: "TT Runs", sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 37.8px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #FFFFFF;
+  margin-bottom: 45px;
+  position: relative;
+}
+
+.clients__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #FFFFFF;
+  margin-bottom: 7px;
+}
+.clients__name svg {
+  width: 24px;
+  height: 24px;
+  margin-left: 7px;
+}
+
+.clients__in {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #848383;
+}
+.clients__in span {
+  margin-right: 7px;
+}
+
+.wereClose .container {
+  padding-bottom: 72px;
+}
+
+.wereClose__wrap {
+  min-height: 712px;
+  background: #050505;
+  position: relative;
+  border-radius: 24px;
+  border: 1px solid #313131;
+  overflow: hidden;
+  padding: 72px 112px;
+}
+.wereClose__wrap .bt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 660px;
+  height: 660x;
+  position: absolute;
+  bottom: -220px;
+  left: -200px;
+  z-index: 22;
+}
+.wereClose__wrap .bt img {
+  width: 660px;
+}
+
+.wereClose__wrap::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 0, 255, 0.3)), color-stop(80.17%, rgba(4, 0, 255, 0))), radial-gradient(100% 151.07% at 100% 0%, rgba(4, 0, 255, 0.5) 0%, rgba(4, 0, 255, 0) 50.17%), radial-gradient(100% 100% at 50% 0%, #0400FF 0%, rgba(4, 0, 255, 0) 45.17%), -webkit-gradient(linear, left bottom, left top, from(rgba(4, 0, 255, 0.05)), to(rgba(4, 0, 255, 0.05)));
+  background: linear-gradient(180deg, rgba(4, 0, 255, 0.3) 0%, rgba(4, 0, 255, 0) 80.17%), radial-gradient(100% 151.07% at 100% 0%, rgba(4, 0, 255, 0.5) 0%, rgba(4, 0, 255, 0) 50.17%), radial-gradient(100% 100% at 50% 0%, #0400FF 0%, rgba(4, 0, 255, 0) 45.17%), linear-gradient(0deg, rgba(4, 0, 255, 0.05), rgba(4, 0, 255, 0.05));
+}
+
+.wereClose__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+
+.wereClose__text {
+  max-width: 336px;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #818181;
+}
+.wereClose__text h3 {
+  font-family: "TT Runs", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 52px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgb(255, 255, 255);
+  margin-bottom: 24px;
+}
+
+.wereClose__form {
+  width: calc(100% - 448px);
+}
+.wereClose__form .input {
+  margin-bottom: 24px;
+  position: relative;
+}
+.wereClose__form .input input {
+  width: 100%;
+  height: 60px;
+  padding: 0 16px;
+  background: rgba(255, 255, 255, 0.1);
+  margin-bottom: 8px;
+  border: 0;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.wereClose__form .input input::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+.wereClose__form .input input::-moz-placeholder {
+  color: #FFFFFF;
+}
+.wereClose__form .input input:-ms-input-placeholder {
+  color: #FFFFFF;
+}
+.wereClose__form .input input::-ms-input-placeholder {
+  color: #FFFFFF;
+}
+.wereClose__form .input input::placeholder {
+  color: #FFFFFF;
+}
+.wereClose__form .input span {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgba(255, 255, 255, 0.2);
+  padding-left: 16px;
+}
+.wereClose__form .icon {
+  width: 22px;
+  position: absolute;
+  top: 18px;
+  right: 16px;
+}
+.wereClose__form .icon svg, .wereClose__form .icon img {
+  width: 100%;
+  height: auto;
+}
+
+.box_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.box_input .main_input, .box_input .box {
+  width: calc(50% - 16px);
+}
+.box_input .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.box_input .box .main_input {
+  width: calc(50% - 8px);
+}
+
+.main_input {
+  margin-bottom: 24px;
+  position: relative;
+}
+.main_input .icon {
+  width: 22px;
+  position: absolute;
+  top: 18px;
+  right: 16px;
+}
+.main_input .icon svg, .main_input .icon img {
+  width: 100%;
+  height: auto;
+}
+.main_input input {
+  width: 100%;
+  height: 60px;
+  padding: 0 16px;
+  background: rgba(255, 255, 255, 0.1);
+  margin-bottom: 8px;
+  border: 0;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.main_input input::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+.main_input input::-moz-placeholder {
+  color: #FFFFFF;
+}
+.main_input input:-ms-input-placeholder {
+  color: #FFFFFF;
+}
+.main_input input::-ms-input-placeholder {
+  color: #FFFFFF;
+}
+.main_input input::placeholder {
+  color: #FFFFFF;
+}
+.main_input span {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgba(255, 255, 255, 0.2);
+  padding-left: 16px;
+}
+
+.wereClose__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 56px;
+  margin-top: 24px;
+  border: 0;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #000000;
+}
+
+.wereClose__p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #808086;
+  padding-left: 16px;
+}
+
+.proBanner .container {
+  padding-bottom: 88px;
+}
+
+.proBanner__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 720px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+}
+
+.proBanner__img {
+  position: absolute;
+  bottom: -200px;
+  right: -120px;
+  width: 1000px;
+}
+.proBanner__img img {
+  width: 100%;
+}
+
+.proBanner__content {
+  max-width: 608px;
+  width: 100%;
+  padding-left: 88px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #808080;
+}
+.proBanner__content h2 {
+  font-family: "TT Runs", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 52px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+
+.proEvolution {
+  min-height: 724px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 88px;
+}
+.proEvolution .container {
+  padding-top: 88px;
+}
+
+.proEvolution::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60.67%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.95)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 60.67%, rgba(0, 0, 0, 0.95) 100%);
+}
+
+.proEvolution__content {
+  max-width: 772px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #808080;
+  position: relative;
+  z-index: 2;
+}
+.proEvolution__content h2 {
+  font-family: "TT Runs", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 52px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.proEvolution__content p {
+  text-align: center;
+}
+
+.proEvolution__img {
+  position: absolute;
+  top: -200px;
+  left: 0;
+  right: 0;
+}
+.proEvolution__img img {
+  width: 100%;
+}
+
+.proProgress {
+  margin-bottom: 88px;
+  overflow: hidden;
+  position: relative;
+}
+.proProgress .container {
+  min-height: 850px;
+  position: relative;
+  padding-top: 262px;
+  padding-bottom: 200px;
+}
+
+.proProgress::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60.67%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.95)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 60.67%, rgba(0, 0, 0, 0.95) 100%);
+}
+
+.proProgress__content {
+  max-width: 672px;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #808080;
+  position: relative;
+  z-index: 2;
+}
+.proProgress__content h2 {
+  font-family: "TT Runs", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 52px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+.proProgress__content p {
+  margin-bottom: 24px;
+}
+
+.proProgress__img {
+  width: 1500px;
+  position: absolute;
+  top: 60px;
+  left: 300px;
+}
+.proProgress__img img {
+  width: 100%;
+}
+
+.mainBtn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 18px 24px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #FFFFFF;
+}
+.mainBtn svg {
+  margin-right: 10px;
+}
+
+.category .container {
+  padding-bottom: 72px;
+}
+
+.category__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.category__aside {
+  max-width: 320px;
+  width: 100%;
+}
+
+.aside_wrap {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 24px;
+}
+
+.aside_block {
+  padding: 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+}
+
+.range__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 35px;
+  right: 32px;
+  font-family: "TT Runs", sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 12px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgba(255, 255, 255, 0.2);
+}
+.range__box input {
+  width: 60px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.2);
+  border: 0;
+  margin-left: 4px;
+}
+
+.ui-widget.ui-widget-content {
+  height: 2px;
+  border: 0;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.ui-slider-horizontal .ui-slider-range {
+  height: 2px;
+  border: 0;
+  background: rgb(178, 255, 0);
+}
+
+.ui-widget.ui-widget-content {
+  height: 2px;
+  border: 0;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+  width: 16px;
+  height: 16px;
+  border: 0;
+  border-radius: 50%;
+  top: -7px;
+  background: rgb(255, 255, 255);
+}
+
+.aside_block:last-child {
+  border: 0;
+}
+
+.aside_title {
+  font-family: "TT Runs", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+
+.aside_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.aside_radio {
+  position: relative;
+}
+.aside_radio input {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.aside_radio label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 12px 16px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  margin-right: 8px;
+  margin-bottom: 8px;
+  font-family: "TT Runs", sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 13.5px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #FFFFFF;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.aside_radio label::after {
+  opacity: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  border: 2px solid #B2FF00;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.aside_radio input:checked + label::after {
+  opacity: 1;
+}
+
+.category__products {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 16px 1fr 16px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  width: calc(100% - 336px);
+}
+
+.category__product {
+  min-height: 544px;
+}
+
+.category__img {
+  height: 320px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 24px;
+  margin-bottom: 16px;
+  position: relative;
+  overflow: hidden;
+}
+.category__img img {
+  width: 150%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.category__content {
+  min-height: 208px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 24px;
+  padding: 24px 32px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #868686;
+}
+
+.category__title {
+  font-family: "TT Runs", sans-serif;
+  font-size: 19px;
+  font-weight: 800;
+  line-height: 26px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+}
+
+.category__price {
+  font-family: "TT Runs", sans-serif;
+  display: inline-block;
+  padding: 4px 10px;
+  margin-top: 24px;
+  background: #FFFFFF;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 14px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #000;
+  border-radius: 4px;
+}
+
+.crumbs {
+  margin-bottom: 32px;
+}
+.crumbs ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.crumbs li {
+  margin-right: 32px;
+  position: relative;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+.crumbs li a {
+  color: #404040;
+}
+.crumbs li p {
+  color: #FFFFFF;
+}
+.crumbs li::after {
+  content: "";
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: #404040;
+  position: absolute;
+  top: 50%;
+  right: -16px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.crumbs li:last-child::after {
+  display: none;
+}
+
+.delBanner .container {
+  padding-bottom: 88px;
+}
+
+.delBanner__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 720px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+}
+
+.delBanner__img {
+  position: absolute;
+  bottom: -220px;
+  right: -200px;
+  width: 950px;
+}
+.delBanner__img img {
+  width: 100%;
+}
+
+.delBanner__content {
+  max-width: 520px;
+  width: 100%;
+  margin-left: 88px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #808080;
+}
+.delBanner__content h2 {
+  font-family: "TT Runs", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 52px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+
+.products5 .products__block:nth-child(1) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  background: rgb(0, 0, 0);
+}
+.products5 .products__block:nth-child(1) h6 {
+  color: #fff;
+}
+.products5 .products__block:nth-child(1) p {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.products5 .products__block:nth-child(2) {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  background: rgb(0, 0, 0);
+}
+.products5 .products__block:nth-child(2) h6 {
+  color: #fff;
+}
+.products5 .products__block:nth-child(2) p {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.products5 .products__block:nth-child(3) {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  background: rgb(0, 0, 0);
+}
+.products5 .products__block:nth-child(3) h6 {
+  color: #fff;
+}
+.products5 .products__block:nth-child(3) p {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.products5 .products__block:nth-child(4) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  background: rgb(0, 0, 0);
+}
+.products5 .products__block:nth-child(4) h6 {
+  color: #fff;
+}
+.products5 .products__block:nth-child(4) p {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.products5 .products__block:nth-child(5) {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  background: rgb(178, 255, 0);
+}
+
+.products5 .products__block:nth-child(6) {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  background: rgb(0, 0, 0);
+}
+.products5 .products__block:nth-child(6) h6 {
+  color: #fff;
+}
+.products5 .products__block:nth-child(6) p {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.refBanner .container {
+  padding-bottom: 88px;
+}
+
+.refBanner__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 720px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+}
+
+.refBanner__img {
+  position: absolute;
+  bottom: -100px;
+  right: -780px;
+  width: 1700px;
+}
+.refBanner__img img {
+  width: 100%;
+}
+
+.refBanner__content {
+  max-width: 520px;
+  width: 100%;
+  margin-left: 88px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #808080;
+}
+.refBanner__content h2 {
+  font-family: "TT Runs", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 52px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+
+.products6 .products__block:nth-child(1) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  background: rgb(178, 255, 0);
+}
+
+.products6 .products__block:nth-child(2) {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  background: rgb(0, 0, 0);
+}
+.products6 .products__block:nth-child(2) h6 {
+  color: #fff;
+}
+.products6 .products__block:nth-child(2) p {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.products6 .products__block:nth-child(3) {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  background: rgb(0, 0, 0);
+}
+.products6 .products__block:nth-child(3) h6 {
+  color: #fff;
+}
+.products6 .products__block:nth-child(3) p {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.products6 .products__block:nth-child(4) {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  background: rgb(0, 0, 0);
+}
+.products6 .products__block:nth-child(4) h6 {
+  color: #fff;
+}
+.products6 .products__block:nth-child(4) p {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.products6 .products__block:nth-child(5) {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  background: rgb(0, 0, 0);
+}
+.products6 .products__block:nth-child(5) h6 {
+  color: #fff;
+}
+.products6 .products__block:nth-child(5) p {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.products6 .products__block:nth-child(6) {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3/5;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  background: rgb(0, 0, 0);
+}
+.products6 .products__block:nth-child(6) h6 {
+  color: #fff;
+}
+.products6 .products__block:nth-child(6) p {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.products7 .products__block:nth-child(1) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  background: rgb(0, 0, 0);
+}
+.products7 .products__block:nth-child(1) h6 {
+  color: #fff;
+}
+.products7 .products__block:nth-child(1) p {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.products7 .products__block:nth-child(2) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  background: rgb(0, 0, 0);
+}
+.products7 .products__block:nth-child(2) h6 {
+  color: #fff;
+}
+.products7 .products__block:nth-child(2) p {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.products7 .products__block:nth-child(3) {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  background: rgb(178, 255, 0);
+}
+
+.products7 .products__block:nth-child(4) {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  background: rgb(0, 0, 0);
+}
+.products7 .products__block:nth-child(4) h6 {
+  color: #fff;
+}
+.products7 .products__block:nth-child(4) p {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.products7 .products__block:nth-child(5) {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  background: rgb(0, 0, 0);
+}
+.products7 .products__block:nth-child(5) h6 {
+  color: #fff;
+}
+.products7 .products__block:nth-child(5) p {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.documents .container {
+  padding-bottom: 72px;
+}
+
+.documents__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.documents__aside {
+  max-width: 320px;
+  width: 100%;
+}
+.documents__aside .wrap {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 24px;
+  margin-bottom: 16px;
+}
+.documents__aside .block {
+  min-height: 64px;
+  padding: 22px 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #FFFFFF;
+}
+.documents__aside .block:last-child {
+  border: 0;
+}
+.documents__aside a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #FFFFFF;
+}
+
+.documents__content {
+  width: calc(100% - 440px);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #FFFFFF;
+}
+.documents__content .wrap {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 24px;
+}
+.documents__content .block {
+  padding: 32px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.documents__content .block:last-child {
+  border: 0;
+}
+.documents__content h4 {
+  font-family: "TT Runs", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #404040;
+  margin-bottom: 16px;
+  margin-bottom: 24px;
+}
+.documents__content p {
+  margin-bottom: 24px;
+}
+.documents__content ul {
+  margin-bottom: 24px;
+}
+.documents__content ul li {
+  position: relative;
+  padding-left: 20px;
+}
+.documents__content ul li:before {
+  content: "";
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  position: absolute;
+  top: 8px;
+  left: 9px;
+}
+
+.auth {
+  min-height: calc(100vh - 266px);
+  position: relative;
+  overflow: hidden;
+  margin-top: -152px;
+  padding-top: 152px;
+}
+.auth .container {
+  padding-top: 64px;
+  padding-bottom: 71px;
+  position: relative;
+  z-index: 2;
+}
+
+.auth__bg::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(0, 0, 0);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(88%, rgb(0, 0, 0)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgb(0, 0, 0) 88%);
+}
+
+.auth__bg {
+  position: absolute;
+  top: -670px;
+  left: -800px;
+}
+.auth__bg img {
+  width: auto;
+  height: 1900px;
+}
+
+.auth__wrap {
+  max-width: 656px;
+  width: 100%;
+  margin-left: auto;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 34px;
+  padding: 8px 0;
+}
+
+.auth__block {
+  padding: 32px;
+  padding-bottom: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+}
+.auth__block .p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 32px;
+}
+.auth__block .pay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 32px;
+  right: 32px;
+}
+.auth__block .pay .img {
+  width: 50px;
+  margin-right: 8px;
+}
+.auth__block .pay .img svg, .auth__block .pay .img img {
+  width: 100%;
+  height: auto;
+}
+.auth__block .pay .img:last-child {
+  margin-right: 0;
+}
+.auth__block h4 {
+  font-family: "TT Runs", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgba(255, 255, 255, 0.2);
+  margin-bottom: 32px;
+}
+
+.auth__block:last-child {
+  border: 0;
+}
+
+h4.auth__title {
+  font-family: "TT Runs", sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 43.2px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #FFFFFF;
+  margin-bottom: 32px;
+}
+h4.auth__title a {
+  color: rgb(178, 255, 0);
+  text-decoration: underline;
+}
+
+.auth__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  margin-bottom: 32px;
+}
+.auth__input input {
+  width: 100%;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 0 16px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #FFFFFF;
+}
+.auth__input input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+.auth__input input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+.auth__input input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+.auth__input input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+.auth__input input::placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+.auth__input span {
+  width: 100%;
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgba(255, 255, 255, 0.2);
+  margin-top: 8px;
+  padding-left: 16px;
+}
+.auth__input .pass_icon {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  z-index: 2;
+  cursor: pointer;
+}
+.auth__input .help_pass {
+  display: inline-block;
+  margin-left: auto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: right;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgba(255, 255, 255, 0.2);
+  margin-top: 24px;
+}
+
+.auth__soc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+.auth__soc p {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgba(255, 255, 255, 0.2);
+  margin-bottom: 32px;
+}
+.auth__soc a {
+  width: 48px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 16px;
+}
+.auth__soc a img {
+  width: 100%;
+}
+
+.auth__btn1, .auth__btn2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 56px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.auth__btn1 {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  color: #FFFFFF;
+}
+
+.auth__btn2 {
+  background: rgb(255, 255, 255);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  color: #000;
+}
+
+.order .container {
+  padding-bottom: 48px;
+}
+
+.order__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.order__content {
+  width: calc(100% - 432px - 16px);
+}
+
+.order__slider {
+  min-height: 511px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(49.67%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.25)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 49.67%, rgba(0, 0, 0, 0.25) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  border-radius: 24px;
+  margin-bottom: 16px;
+}
+.order__slider .block {
+  width: 100%;
+  height: 511px;
+}
+.order__slider .block img {
+  width: 100%;
+}
+.order__slider .slick-prev, .order__slider .slick-next {
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  top: auto;
+  bottom: 32px;
+  left: auto;
+  right: 32px;
+  z-index: 9;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  border-radius: 50%;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+}
+.order__slider .slick-prev {
+  -webkit-transform: translateX(-64px);
+          transform: translateX(-64px);
+}
+.order__slider .slick-prev::before, .order__slider .slick-next::before {
+  display: none;
+}
+.order__slider .slick-prev::after, .order__slider .slick-next::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 2px solid #FFFFFF;
+  border-radius: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+.order__slider .slick-prev::after {
+  left: 55%;
+  border-top: 0;
+  border-right: 0;
+}
+.order__slider .slick-next::after {
+  left: 45%;
+  border-bottom: 0;
+  border-left: 0;
+}
+
+.order__info {
+  border-radius: 24px;
+  padding: 32px;
+  padding-bottom: 0;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  margin-bottom: 16px;
+  position: relative;
+}
+.order__info .pay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 32px;
+  right: 32px;
+}
+.order__info .pay .img {
+  width: 50px;
+  margin-right: 8px;
+}
+.order__info .pay .img svg, .order__info .pay .img img {
+  width: 100%;
+  height: auto;
+}
+.order__info .pay .img:last-child {
+  margin-right: 0;
+}
+.order__info .main_input {
+  margin-bottom: 32px;
+}
+.order__info h4 {
+  font-family: "TT Runs", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgba(255, 255, 255, 0.2);
+  margin-bottom: 32px;
+}
+.order__info ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 12px 0;
+  margin-bottom: 32px;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+}
+.order__info ul li:last-child {
+  border-bottom: 0;
+}
+.order__info ul p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgb(255, 255, 255);
+}
+.order__info ul .icon {
+  display: block;
+  width: 32px;
+  height: 0;
+  margin-right: 16px;
+  position: relative;
+}
+.order__info ul .icon svg {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.order__info ul span {
+  display: block;
+  width: 50%;
+  text-align: right;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: right;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.order__aside {
+  max-width: 432px;
+  width: 100%;
+}
+.order__aside .wrap {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  border-radius: 24px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+.order__aside h4 {
+  font-family: "TT Runs", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.order__price {
+  background: radial-gradient(48.05% 240.43% at 2.66% 243.92%, #B2FF00 0%, rgba(0, 0, 0, 0) 100%);
+  padding: 24px 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.order__price span {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgba(255, 255, 255, 0.2);
+  margin-bottom: 8px;
+}
+.order__price p {
+  font-family: "TT Runs", sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 37.8px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgb(255, 255, 255);
+}
+
+.order__checkbox {
+  padding: 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.order__checkbox .box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.order__checkbox .aside_radio label {
+  padding: 12px 30px;
+}
+
+.order__kod {
+  padding: 32px;
+  padding-bottom: 8px;
+}
+.order__kod .main_input input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+.order__kod .main_input input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+.order__kod .main_input input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+.order__kod .main_input input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+.order__kod .main_input input::placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.order__qrkod {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.order__qrkod .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 148px;
+  height: 148px;
+  border-radius: 24px;
+  overflow: hidden;
+}
+.order__qrkod .img img {
+  width: 290px;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+.order__qrkod h4 {
+  margin-bottom: 0;
+  max-width: 164px;
+}
+.order__qrkod .icon {
+  width: 88px;
+  min-height: 148px;
+  border-left: 1px solid rgba(255, 255, 255, 0.05);
+  margin-left: auto;
+  position: relative;
+}
+.order__qrkod .icon::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.order__qr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: radial-gradient(34.72% 101.35% at 17.48% 100%, rgba(0, 7, 255, 0.25) 0%, rgba(0, 7, 255, 0) 100%);
+  padding: 30px 32px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 24px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgba(255, 255, 255, 0.2);
+}
+.order__qr h4 {
+  margin-bottom: 4px;
+}
+.order__qr .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 88px;
+  width: 88px;
+  height: 88px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-right: 16px;
+}
+.order__qr .img img {
+  width: 100%;
+}
+
+.cart__slider {
+  border-radius: 24px;
+  padding: 44px 32px 24px 32px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  margin-bottom: 16px;
+}
+.cart__slider h4 {
+  font-family: "TT Runs", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgba(255, 255, 255, 0.2);
+  margin-bottom: 38px;
+}
+.cart__slider .block {
+  width: 320px;
+  height: 320px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-right: 16px;
+  padding: 48px 32px;
+  position: relative;
+}
+.cart__slider .content {
+  max-width: 184px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgba(0, 0, 0, 0.7);
+  position: relative;
+  z-index: 2;
+}
+.cart__slider .content .title {
+  font-family: "TT Runs", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 26px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgb(0, 0, 0);
+  margin-bottom: 8px;
+}
+.cart__slider .content .price {
+  display: inline-block;
+  font-family: "TT Runs", sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 14px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #000000;
+  background: rgb(255, 255, 255);
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+.cart__slider .img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+  height: 100%;
+}
+.cart__slider .block.yellow {
+  background: var(--Yellow, rgb(255, 230, 9));
+}
+.cart__slider .block.green {
+  background: rgb(178, 255, 0);
+}
+.cart__slider .block.purple {
+  background: rgb(63, 2, 74);
+}
+.cart__slider .block.purple .content {
+  color: rgba(255, 255, 255, 0.5);
+}
+.cart__slider .block.purple .content .title {
+  color: #FFFFFF;
+}
+.cart__slider .slick-list {
+  border-radius: 24px;
+  overflow: hidden;
+}
+.cart__slider .slick-prev, .cart__slider .slick-next {
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  top: -76px;
+  bottom: auto;
+  left: auto;
+  right: 0;
+  z-index: 9;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  border-radius: 50%;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+}
+.cart__slider .slick-prev {
+  -webkit-transform: translateX(-64px);
+          transform: translateX(-64px);
+}
+.cart__slider .slick-prev::before, .cart__slider .slick-next::before {
+  display: none;
+}
+.cart__slider .slick-prev::after, .cart__slider .slick-next::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 2px solid #FFFFFF;
+  border-radius: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+.cart__slider .slick-prev::after {
+  left: 55%;
+  border-top: 0;
+  border-right: 0;
+}
+.cart__slider .slick-next::after {
+  left: 45%;
+  border-bottom: 0;
+  border-left: 0;
+}
+
+.cart__aside {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  border-radius: 24px;
+}
+.cart__aside h4 {
+  color: rgba(255, 255, 255, 0.2);
+  margin-bottom: 32px;
+}
+.cart__aside .block {
+  padding: 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.cart__aside .block:last-child {
+  border-bottom: 0;
+}
+.cart__aside ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+}
+.cart__aside ul li .img {
+  width: 50px;
+  margin-right: 24px;
+}
+.cart__aside ul li .img svg, .cart__aside ul li .img img {
+  width: 100%;
+  height: auto;
+}
+.cart__aside ul p {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgba(255, 255, 255, 0.2);
+  margin-bottom: 4px;
+}
+.cart__aside ul span {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgb(255, 255, 255);
+}
+
+.profile .container {
+  padding-bottom: 70px;
+}
+
+.profile__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.profile__aside {
+  max-width: 320px;
+  width: 100%;
+}
+.profile__aside .wrap {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  border-radius: 24px;
+  margin-bottom: 16px;
+}
+.profile__aside .block {
+  padding: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.profile__aside .block:last-child {
+  border-bottom: 0;
+}
+
+.profile__content {
+  max-width: 768px;
+  width: 100%;
+}
+.profile__content .wrap {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  border-radius: 24px;
+  margin-bottom: 16px;
+}
+.profile__content .block {
+  padding: 32px;
+  padding-bottom: 0;
+  position: relative;
+}
+.profile__content .block .pay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 32px;
+  right: 32px;
+}
+.profile__content .block .pay .img {
+  width: 50px;
+  margin-right: 8px;
+}
+.profile__content .block .pay .img svg, .profile__content .block .pay .img img {
+  width: 100%;
+  height: auto;
+}
+.profile__content .block .pay .img:last-child {
+  margin-right: 0;
+}
+.profile__content .block:last-child {
+  border-bottom: 0;
+}
+.profile__content h4 {
+  font-family: "TT Runs", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgba(255, 255, 255, 0.2);
+  margin-bottom: 32px;
+}
+
+.profile__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.profile__link .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  border-radius: 50%;
+  margin-right: 16px;
+}
+.profile__link p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgb(255, 255, 255);
+  margin-bottom: 4px;
+}
+.profile__link span {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.footer {
+  position: relative;
+  z-index: 9;
+}
+.footer .container {
+  padding-bottom: 72px;
+}
+
+.footer__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 72px;
+}
+
+.footer__call {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 18px 24px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #FFFFFF;
+}
+.footer__call svg {
+  margin-right: 10px;
+}
+
+.footer__soc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: 32px;
+}
+.footer__soc a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 32px;
+}
+.footer__soc a:last-child {
+  margin-right: 0;
+}
+
+.footer__language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 18px 24px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #FFFFFF;
+}
+.footer__language svg {
+  margin-right: 10px;
+}
+
+.footer__center {
+  padding-top: 72px;
+  padding-bottom: 104px;
+}
+
+.footer__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__block {
+  max-width: 320px;
+  width: 100%;
+}
+
+h5 {
+  font-family: "TT Runs", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #FFFFFF;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
+
+.footer__navbar li {
+  margin-bottom: 16px;
+}
+.footer__navbar li:last-child {
+  margin-bottom: 0;
+}
+.footer__navbar a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #404040;
+}
+
+.footer__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer__bottom .text {
+  max-width: 600px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #404040;
+}
+
+.footer__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+}
+.footer__right a, .footer__right p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  margin-left: 32px;
+  color: #404040;
+}
