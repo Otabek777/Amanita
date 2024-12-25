@@ -286,6 +286,20 @@ ul, ol {
   background: linear-gradient(180deg, #000000 0%, #1D1D1D 100%);
   border: 1px solid rgba(255, 255, 255, 0.2);
   position: relative;
+  overflow: hidden;
+}
+.products__block .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 320px;
+  width: 100%;
+  position: absolute;
+  bottom: -25%;
+  right: 0;
+}
+.products__block .img img {
+  width: 100%;
 }
 
 h6 {
@@ -307,6 +321,7 @@ h6 {
   position: absolute;
   top: 32px;
   left: 32px;
+  z-index: 2;
   font-size: 20px;
   font-weight: 500;
   line-height: 26px;
@@ -338,6 +353,7 @@ h6 {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 2;
   padding: 48px 32px 0 32px;
   font-size: 16px;
   font-weight: 500;
@@ -359,6 +375,7 @@ h6 {
   position: absolute;
   top: 50%;
   left: 48px;
+  z-index: 2;
   max-width: 240px;
   width: 100%;
   -webkit-transform: translateY(-50%);
@@ -378,6 +395,7 @@ h6 {
   top: 48px;
   left: 0;
   right: 0;
+  z-index: 2;
   width: 100%;
   padding: 0 32px;
   font-size: 16px;
