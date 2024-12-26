@@ -121,6 +121,9 @@ ul, ol {
     border: 1px solid #191919;
     background: #0D0D0D;
 }
+.header__burgir {
+    display: none;
+}
 .header__name {
     font-family: 'TT Runs', sans-serif;
     font-size: 28px;
@@ -2718,3 +2721,10 @@ h5 {
         color: #404040;
     }
 }
+
+// Media
+// @media screen and (max-width: 992px) {
+//     section {
+//         display: none;
+//     }
+// }
